@@ -4,7 +4,10 @@ import pyaudio
 from pydub import AudioSegment
 import time
 import os
-import winsound
+try: 
+    import winsound
+except:
+    from . import winsound
 import numpy as np
 
 beep_frequency = 2500  # Set Frequency To 2500 Hertz
