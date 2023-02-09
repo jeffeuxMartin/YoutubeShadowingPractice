@@ -48,7 +48,7 @@ import os
 import sys
 import time
 
-if vid:
+if False and vid:
     st.text(vid)
     script_path = f"{vid}.json"
     with st.empty():
@@ -89,3 +89,26 @@ if vid:
         
 #     st.header(vid[3])
 #     os.system(f'say {vid[3]}')
+
+# xxFqPNPJuU8
+# st.audio('xxFqPNPJuU8.mp3')
+# st.audio('xxFqPNPJuU8.mp3', start_time=3)
+
+import base64
+
+mymidia_placeholder = st.empty()
+
+audio_file = open('3.mp3', 'rb')
+audio_bytes = audio_file.read()
+mymidia_bytes = audio_bytes
+mymidia_str = "data:audio/ogg;base64,%s"%(base64.b64encode(mymidia_bytes).decode())
+mymidia_html = """
+                <audio autoplay control class="stAudio" >
+                <source src="%s" type="audio/ogg">
+                Your browser does not support the audio element.
+                </audio>
+            """%mymidia_str
+
+mymidia_placeholder.empty()
+time.sleep(1)
+mymidia_placeholder.markdown(mymidia_html, unsafe_allow_html=True)
