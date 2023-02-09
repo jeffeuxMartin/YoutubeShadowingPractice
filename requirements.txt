@@ -6,7 +6,7 @@ numpy
 openai_whisper
 torch
 torchvision
-torchaudio --extra-index-url https://download.pytorch.org/whl/cpu
+# torchaudio --extra-index-url https://download.pytorch.org/whl/cpu
 
 numpy==1.21.5
 openai_whisper==20230117
