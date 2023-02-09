@@ -11,7 +11,11 @@ def split_video(vid, language='English', output="script.json", model="base", pru
    translate = False 
 
    model = whisper.load_model(model)
-   result = model.transcribe(vid, fp16=False)
+   result = model.transcribe(
+      vid, 
+      verbose=True,
+      fp16=True,
+   )
 
 
    if prune:
