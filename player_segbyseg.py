@@ -4,7 +4,7 @@ import pyaudio
 from pydub import AudioSegment
 import time
 import os
-import winsound
+# import winsound
 import numpy as np
 
 beep_frequency = 2500  # Set Frequency To 2500 Hertz
@@ -106,7 +106,9 @@ def play(mp3_path="test.mp3", script_path='script.json', stop=0, n_words=10, spe
 
         # Beep and play
         if stop == 0:
-            winsound.Beep(beep_frequency, beep_duration)
+            # winsound.Beep(beep_frequency, beep_duration)
+            import os
+            os.system('say beep')
 
         if stop != 0:
             time.sleep(stop)
