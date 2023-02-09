@@ -30,3 +30,8 @@ torchaudio --extra-index-url https://download.pytorch.org/whl/cpu
 ipython
 
 # https://github.com/ytdl-org/youtube-dl/issues/30019
+
+streamlit
+watchdog
+
+simpleaudio
