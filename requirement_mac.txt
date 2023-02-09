@@ -1,0 +1,37 @@
+numpy
+openai_whisper
+# PyAudio==0.2.11
+# PyAudio
+pydub
+# pydub @ file:///home/conda/feedstock_root/build_artifacts/pydub_1615612442567/work
+
+pyrubberband
+pytube
+pytube3
+whisper
+torch
+torchvision
+torchaudio --extra-index-url https://download.pytorch.org/whl/cpu
+
+# numpy==1.21.5
+# openai_whisper==20230117
+# PyAudio==0.2.12
+# pydub==0.25.1
+# pyrubberband==0.3.0
+# pytube==12.1.2
+# pytube3==9.6.4
+# whisper==1.1.10
+
+# https://www.reddit.com/r/learnpython/comments/x8lm3l/please_help_error_install_pyaudio_on_mac_m1/
+# LDFLAGS="-L$(brew --prefix portaudio)/lib" CFLAGS="-I$(brew --prefix portaudio)/include" pip install pyaudio
+
+# ImportError: dlopen(python3.7/site-packages/pyaudio/_portaudio.cpython-37m-darwin.so, 0x0002): symbol not found in flat namespace (_PaMacCore_SetupChannelMap)
+
+ipython
+
+# https://github.com/ytdl-org/youtube-dl/issues/30019
+
+streamlit
+watchdog
+
+simpleaudio
