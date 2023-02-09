@@ -9,6 +9,13 @@ st.title('YouTube transcription')
 #     st.header('您所上傳的CSV檔內容：')
 #     st.dataframe(df)
 
+try:
+    import os
+    print('GPU?')
+    os.system('nvidia-smi')
+    print('GPU!')
+except:
+    pass
 
 vid = st.text_input('Input Video ID:')
 
