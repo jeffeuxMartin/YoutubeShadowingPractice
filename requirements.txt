@@ -1,5 +1,6 @@
 # PyAudio
 pyaudio
+# sudo: https://discuss.streamlit.io/t/why-streamlit-cloud-fail-to-build-wheels-for-pyaudio/34913
 simpleaudio
 
 
